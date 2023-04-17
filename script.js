@@ -67,3 +67,7 @@ const nested = [1, 2, [3, 4]];
 //agora retornando os valores de forma individual
 const [i, , [j, k]] = nested;
 console.log(i, j, k);
+
+//extraindo valores padrao
+const [d = 1, e = 1, f = 1] = [1, 2];
+console.log(d, e, f);
